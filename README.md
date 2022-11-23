@@ -90,3 +90,30 @@ int main()
 	else
 		printf("%d is not a prime number\n",m);
 }
+//利用break语句判断ms是否为素数的练习
+#include<stdio.h>
+int Isprime(int m)
+{
+	int i = 0;
+	if (m <= 1)
+		return 0;
+	for (i = 2; i < m ; i++)
+	{
+		if (m % i == 0)
+			break;
+	}
+	return i < m ? 0 : 1;
+}
+int main()
+{
+	int m = 0;
+	int i = 0;
+	printf("Input m:");
+	scanf_s("%d", &m);
+	if (Isprime(m) == 1)
+	{
+		printf("%d is a prime number\n", m);
+	}
+	else
+		printf("%d is not a prime number\n",m);
+}
