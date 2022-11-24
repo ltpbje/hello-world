@@ -117,3 +117,33 @@ int main()
 	else
 		printf("%d is not a prime number\n",m);
 }
+//设置标志变量
+#include<stdio.h>
+#include<math.h>
+int Isprime(int m)
+{
+	int i = 0;
+	int flag = 1;
+	double a;
+	if (m <= 1) 
+		flag = 0;		
+	for (i = 2;(i < sqrt(m))&&flag; i++)
+	{
+		if (m % i == 0)
+			flag = 0;
+	}
+	return flag;
+}
+int main()
+{
+	int m = 0;
+	int i = 0;
+	printf("Input m:");
+	scanf_s("%d", &m);
+	if (Isprime(m) == 1)
+	{
+		printf("%d is a prime number\n", m);
+	}
+	else
+		printf("%d is not a prime number\n",m);
+}
