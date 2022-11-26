@@ -158,4 +158,20 @@ int main()
 		printf("%d is odd number\n",i);
 	return 0;
 }
+//输出零到一百之间的所有的奇数
+//switch语句
+#include<stdio.h>
+int main()
+{
+	int i;
+	int number = 19;
+	for(i = 1;i<=100;i++)
+		switch (number = i % 2)
+		{
+		case 1:
+			printf("%d is odd number\n", i);
+			break;
+		}
+		return 0;
+}
 
