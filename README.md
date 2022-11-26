@@ -147,3 +147,15 @@ int main()
 	else
 		printf("%d is not a prime number\n",m);
 }
+//输出零到一百之间的所有的奇数
+#include<stdio.h>
+int main()
+{
+	int i;
+	int number = 19;
+	for(i = 1;i<=100;i++)
+	if (i % 2 == 1)
+		printf("%d is odd number\n",i);
+	return 0;
+}
+
