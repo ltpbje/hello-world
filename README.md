@@ -239,3 +239,18 @@ int main()
 	}
 	return 0;
 }
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int i=1;
+	int j = 1;
+	for (i=1;i<=3;i++)
+	{
+		for (j=1; j <= 2; j++)
+		{
+			printf("hehe\n");
+		}
+	}
+	return 0;
+}
