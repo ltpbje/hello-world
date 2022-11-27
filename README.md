@@ -201,3 +201,28 @@ int main()
 	}
 	return 0;
 }
+//一个练习
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int ret = 0;
+	char password[20] = {0};
+	printf("输入密码\n");
+	scanf("%s",&password);
+	while (getchar() != '\n')
+	{
+		;
+	}
+	printf("请确认(Y/N):>\n");
+	ret = getchar();
+	if (ret == 'Y')
+	{
+		printf("输入正确\n");
+	}
+	else if (ret == 'N')
+	{
+		printf("取消输入\n");
+	}
+	return 0;
+}
