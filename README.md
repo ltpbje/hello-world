@@ -174,4 +174,19 @@ int main()
 		}
 		return 0;
 }
+//contiune导致死循环
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+	int i = 1;
+	while (i <= 10)
+	{
+		if (i == 5)
+			continue;
+		printf("%d ", i);
+		i++;
+	}
+	return 0;
+}
 
