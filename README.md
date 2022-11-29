@@ -254,3 +254,18 @@ int main()
 	}
 	return 0;
 }
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+//打印n的阶乘
+int main()
+{
+	int n,i;
+	int ret = 1;
+	scanf("%d",&n);
+	for (i = 1; i <= n; i++)
+	{
+		ret = ret * i;
+	}
+	printf("%d!=%d",n,ret);
+	return 0;
+}
