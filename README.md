@@ -269,3 +269,21 @@ int main()
 	printf("%d!=%d",n,ret);
 	return 0;
 }
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+//打印n阶乘和
+int main()
+{
+	int n,i,j;
+	int ret = 1;
+	int sum = 0;
+	scanf("%d",&n);
+	for (i = 1; i <= n; i++)
+	{
+		ret = ret * i;
+		sum = ret + sum;
+		
+	}
+	printf("%d",sum);
+	return 0;
+}
