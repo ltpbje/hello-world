@@ -287,3 +287,25 @@ int main()
 	printf("%d",sum);
 	return 0;
 }
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main(void)
+{
+    int a[] = { 1,2,3,4,5,6,7,8,9,10 };
+    int k = 7;
+    int i = 0;
+    int sz = sizeof(a) / sizeof(a[0]);
+    for (i = 0; i < sz; i++)
+    {
+        if (k ==a[i])
+        {
+            printf("找到了下标为%d\n",i);
+            break;
+        }
+    }
+    if (i == sz)
+    {
+        printf("找不到\n");
+    }
+    return 0;
+}
