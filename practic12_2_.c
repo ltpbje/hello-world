@@ -16,8 +16,8 @@ int main(void)
 		right--;
 		left++;
 		printf("%s\n", arr2);
-		Sleep(1000);//ĞİÏ¢Ò»Ãë
-		system("cls");//Çå¿ÕÆÁÄ»
+		Sleep(1000);//ä¼‘æ¯ä¸€ç§’
+		system("cls");//æ¸…ç©ºå±å¹•
 	}
 	printf("%s\n",arr2);
 	return 0; 
