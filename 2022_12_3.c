@@ -8,20 +8,20 @@ int main(void)
 	int i = 0;
 	for (i = 0; i < 3; i++)
 	{
-		printf("ÊäÈëÃÜÂë:");
+		printf("è¾“å…¥å¯†ç :");
 		scanf("%s",&password);
-		if (strcmp(password, "123456") == 0)
+		if (strcmp(password, "123456") == 0)//==ä¸èƒ½ç”¨æ¥æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰,åº”è¯¥ä½¿ç”¨ä¸€ä¸ªåº“å‡½æ•°-strcmp
 		{
-			printf("ÊäÈëÕýÈ·\n");
+			printf("è¾“å…¥æ­£ç¡®\n");
 			break;
 		}
 		else
 		{
-			printf("´íÎó,ÖØÐÂÊäÈë\n");
+			printf("é”™è¯¯,é‡æ–°è¾“å…¥\n");
 		}
 	}
 	if (i == 3)
-		printf("ÊäÈë´íÎó\n");
+		printf("è¾“å…¥é”™è¯¯\n");
 	printf("");
 	return 0;
 }
